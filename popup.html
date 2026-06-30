@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ImageZoomer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="header">
+      <img src="icons/icon48.png" alt="" class="logo">
+      <div>
+        <h1>ImageZoomer</h1>
+        <p>Image zoom and hover preview</p>
+        <p class="version" id="versionText">Version</p>
+      </div>
+    </header>
+
+    <label class="toggle-row">
+      <span>
+        <strong>Auto hover preview</strong>
+        <small>Show a small zoom window when hovering images. The preview can be resized, remembers its size, and has a small close buffer.</small>
+      </span>
+      <input id="autoHoverMode" type="checkbox">
+    </label>
+
+    <section class="help">
+      <p><strong>Fullscreen:</strong> hover an image, double-tap Ctrl.</p>
+      <p><strong>Controls:</strong> wheel to zoom, move mouse to pan, R to rotate.</p>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
